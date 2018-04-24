@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    app:fitsSystemWindows="true"
+    app:layout_height="match_parent"
+    app:layout_width="match_parent">
+
+    <FrameLayout
+        app:id="@+id/content_id"
+        app:layout_above="@id/bottom_navigation"
+        app:layout_height="match_parent"
+        app:layout_width="match_parent" />
+
+    <com.example.behnam.exercise.my_AHBottomNavigation
+        app:id="@id/bottom_navigation"
+        app:layout_alignParentBottom="true"
+        app:layout_alignParentStart="true"
+        app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        app:layout_height="50dp"
+        app:layout_width="match_parent" />
+</RelativeLayout>
